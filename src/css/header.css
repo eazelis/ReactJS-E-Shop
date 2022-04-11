@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=');
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #404040;
+}
+header ul {
+    height: max-content;
+    display: block;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 30px 20px;
+    position: relative;
+    margin: 0;
+}
+header li:hover .submenu {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+    opacity: 1;
+}
+header a {
+    text-decoration: none;
+    color: #404040;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.submenu {
+    transition: 0.5s;
+    margin-top: 30px;
+    top: 46px;
+    left: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+}
+.submenu li {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid #dddddd;
+}
+.submenu a:hover {
+    color: #fa6161;
+    transition: 0.4s;
+}
+.stroke {
+    background: transparent;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #404040;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+}
+.stroke span {
+    width: 20px;
+    height: 3px;
+    background: #404040;
+    margin: 2px 0;
+    border-radius: 20%;
+}
+.stroke button {
+    position: absolute;
+    opacity: 0;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+}
+.fa-angle-down {
+    padding: 0 5px;
+} 
+.navbar button {
+    display: none;
+}
+
+@media screen and (max-width: 1180px){ /* 1180px */
+.container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.stroke {
+    display: flex;
+}
+header {
+    flex-direction: column;
+    border-bottom: 0;
+}
+
+.navbar {
+    display: none;
+    transition: all 0.5s ease-out;
+    background-color: #404040;
+    width: 100%;
+    padding: 0 25px;
+}
+.active {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease-out;
+}
+.navbar li {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin: 10px 0;
+}
+.navbar li:last-of-type {
+    margin-bottom: 10px;
+}
+.navbar li a {
+    color: white;
+    max-height: 20px;
+}
+.submenu {
+    display: none;
+    margin: 0;
+    position: static;
+    left: 0;
+    margin-top: 25px;
+    align-items: center;
+    border-top: 1px solid white;
+}
+.submenu li {
+    margin: 0;
+
+    max-width: 150px;
+
+}
+
+.fa-angle-down {
+    position: absolute;
+    padding: 0 10px;
+    right: 5px;
+} 
+.stroke {
+    margin-bottom: 10px;
+}
+.navbar button {
+    position: absolute;
+    right: 8px;
+    padding: 10px;
+    top: 15px;
+    z-index: 1;
+    opacity: 0;
+}
+.navbar .active {
+    display: flex;
+}
+header li:hover .submenu {
+    background-color: transparent;
+}
+
+
+}
+
