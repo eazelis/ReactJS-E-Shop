@@ -1,0 +1,19 @@
+.login {
+    display: flex;
+    justify-content: center;
+}
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0 0 0;
+    background: #3e3e3e;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    color: white
+}
+.login-form form label,input {
+    margin: 5px;
+}

@@ -1,5 +1,5 @@
 import logo from '../images/logo.png';
-import '../css/header.css';
+import './css/header.css'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
